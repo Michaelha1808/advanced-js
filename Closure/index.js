@@ -64,3 +64,20 @@ function createApp() {
 const app = createApp();
 app.add("Mercedes");
 app.add("RollRoyce");
+
+function a(x) {
+  x++;
+  return function () {
+    console.log(++x);
+  };
+}
+
+a(1)();
+a(1)();
+a(1)();
+
+let x = a(1);
+x();
+x();
+x();
+// Output: ?
