@@ -31,7 +31,6 @@ function Car(name, color, width) {
   this.width = width;
 }
 Car.prototype.run = function () {
-  //Context
   function test() {
     console.log(this);
   }
